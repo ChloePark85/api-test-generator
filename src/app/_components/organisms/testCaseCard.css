@@ -8,15 +8,16 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: white;
+    background-color: #f1f1f1;
+
 }
 @media (prefers-color-scheme: dark) {
     .modalBackground {
-        background-color: rgba(91, 112, 131, 0.4);
+        background-color: #f1f1f1;
     }
 }
 .modal {
-    background-color: rgb(var(--background-end-rgb));
+    background-color: white;
     position: relative;
     top: 5%;
     max-width: 80vw;
@@ -25,24 +26,25 @@
     display: flex;
     flex-direction: column;
     height: 550px;
+    padding: 10px 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .modalHeader {
-    padding: 36px 80px 20px;
-    font-size: 31px;
+    font-size: 20px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
-.modal form {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
 
 .modalBody {
     flex: 1;
-    padding: 0 80px;
+    padding: 10px 10px;
 }
+
 @media all and (min-width: 687px) {
     .modal {
         top: 5%;
@@ -52,10 +54,10 @@
         padding: 0;
     }
     .modalHeader {
-        padding: 36px 80px 20px;
+        padding: 25px 25px;
     }
     .modalBody {
-        padding: 0 80px;
+        padding: 25px 25px;
     }
 }
 

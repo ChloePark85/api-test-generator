@@ -1,4 +1,4 @@
-import CustomFormCard from "@/app/_components/organisms/CustomFormCard";
+import CustomFormCard from "../../_components/organisms/TestCaseCard";
 
 export default function Page() {
   <CustomFormCard />;
